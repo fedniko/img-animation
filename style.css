@@ -1,0 +1,43 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.view_port {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("https://images.hdqwalls.com/download/the-mandalorian-tv-series-2020-ru-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cylon_eye {
+    background-image: url("https://www.pngarts.com/files/8/Baby-Yoda-Transparent-Images.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    height: 50%;
+    width: 20%;
+    min-width: 20%;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    -moz-animation: 4s linear 0s infinite alternate move_eye;
+    -o-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+
+.cylon_eye:hover {
+    cursor: pointer;
+}
+
+@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@-moz-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@-o-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
